@@ -1,0 +1,125 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Mejoras de resaltado a los notebooks (2003 - 2004) &mdash; Carlos A. Córdoba</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="Carlos A. Córdoba" href="../index.html" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon:300,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:regular,bold' rel='stylesheet' type='text/css'/>
+
+  </head>
+  <body>
+    <script>
+     // Add the selected class to the currently active element of the
+     // topnav
+     function setSelected() {
+         $("div.topnav a").removeClass("selected");
+         $("div.topnav a").each( function(i) {
+             if (document.location.href.indexOf($(this).text()) > 0) {
+                 $(this).addClass("selected")
+             };
+         });
+     };
+     
+     // Apply the previous functions after the page has loaded
+     $(document).ready( function () { 
+         setSelected();
+     });
+   </script>
+
+    <div id='center-highlight'>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>Carlos A. Córdoba</span></a></h1>
+        <h2 class="heading"><span>Físico computacional</span></h2>
+      </div>
+      <div class="topnav">
+      <ul class="tabs" role="navigation">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="Principal.html">Proyectos</a></li>
+    <li><a href="../Publicaciones.html">Publicaciones</a></li>
+    <li><a href="../Ensayos.html">Ensayos</a></li>
+    <li><a href="../Novedades.html">Novedades</a></li>
+    <li><a href="../Contacto.html">Contacto</a></li>
+<ul>
+      </div>
+      <div class="content">
+        
+  <div class="section" id="mejoras-de-resaltado-a-los-notebooks-2003-2004">
+<h1>Mejoras de resaltado a los notebooks (2003 - 2004)<a class="headerlink" href="#mejoras-de-resaltado-a-los-notebooks-2003-2004" title="Enlazar permanentemente con este título">¶</a></h1>
+<table border="0" id="front-page" align="center">
+<tr>
+<td width="80%"><img src="../_static/highlighting.png" id="highlighting"></td>
+<td width="30%" rowspan="2">
+<a href=../Proyectos/Mathematica.html>
+<img src="../_static/mathematica-4.png"></td>
+</a>
+</tr>
+<tr>
+<td><p>Este proyecto nació en el 2003, cuando la versión actual de <em>Mathematica</em> era
+la 4.2. En esa época estaba enseñándoles el programa a dos primitos muy
+inteligentes, que aún estaban en el colegio. Mientras lo hacía, noté que la
+falta de resaltado para el código que escribían en el notebook les dificultaba
+mucho el aprendizaje del lenguaje, aunque les parecía muy interesante el
+entorno <a class="footnote-reference" href="#id2" id="id1">[1]</a>.</p>
+<p>En busca de soluciones encontré el código de <a class="reference external" href="http://groups.google.com.co/group/comp.soft-sys.math.mathematica/browse_thread/thread/377a9eb137198e05/41daa2a212e360e9?q=Luc+Barthelet+beautiful&amp;rnum=1&amp;hl=es#41daa2a212e360e9">Luc Barthelet</a>, que agregaba
+algunas opciones de resaltado a través de un botón llamado <em>Beatiful</em>. Con base
+en él, diseñé un paquete y un conjunto de botones que permitían resaltar todo
+un notebook y que añadían más posibilidades de resaltado que el botón de Luc,
+junto con un atajo de teclado para reaplicarlo continuamente. Dado que no es
+posible tener acceso al funcionamiento interno de <em>Mathematica</em>, no pude
+encontrar ninguna forma de aplicar el resaltado en tiempo real. Lo que hace el
+paquete es modificar el color y estilo del código en el notebook, así que
+cuando el usuario escribe nuevos comandos y funciones sobre el código actual,
+el resaltado usualmente se estropea y se hace necesario reaplicarlo.</p>
+<p>Los resultados fueron muy buenos y aún considero que el paquete es muy útil
+para publicar notebooks en la web, por lo que lo he ido actualizando para que
+funcione con cada nueva versión de <em>Mathematica</em> desde entonces. El código
+puede descargarse desde este <a class="reference download internal" href="../_downloads/MathEditor.zip"><tt class="xref download docutils literal"><span class="pre">link</span></tt></a> y
+pueden seguirse los cambios que le voy realizando en su <a class="reference external" href="https://bitbucket.org/ccordoba12/matheditor/src/b37473503171/MathEditor">repositorio</a> de
+Bitbucket.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Cabe anotar que este aspecto ha sido mejorado bastante desde la versión 6.</td></tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table></div>
+
+
+      </div>
+      <div class="bottomnav"></div>
+   </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Carlos Córdoba.
+      Actualizado por última vez en Jan 05, 2015.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Python (Desde 2009) &mdash; Carlos A. Córdoba</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="Carlos A. Córdoba" href="../index.html" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon:300,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:regular,bold' rel='stylesheet' type='text/css'/>
+
+  </head>
+  <body>
+    <script>
+     // Add the selected class to the currently active element of the
+     // topnav
+     function setSelected() {
+         $("div.topnav a").removeClass("selected");
+         $("div.topnav a").each( function(i) {
+             if (document.location.href.indexOf($(this).text()) > 0) {
+                 $(this).addClass("selected")
+             };
+         });
+     };
+     
+     // Apply the previous functions after the page has loaded
+     $(document).ready( function () { 
+         setSelected();
+     });
+   </script>
+
+    <div id='center-highlight'>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>Carlos A. Córdoba</span></a></h1>
+        <h2 class="heading"><span>Físico computacional</span></h2>
+      </div>
+      <div class="topnav">
+      <ul class="tabs" role="navigation">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="Principal.html">Proyectos</a></li>
+    <li><a href="../Publicaciones.html">Publicaciones</a></li>
+    <li><a href="../Ensayos.html">Ensayos</a></li>
+    <li><a href="../Novedades.html">Novedades</a></li>
+    <li><a href="../Contacto.html">Contacto</a></li>
+<ul>
+      </div>
+      <div class="content">
+        
+  <div class="section" id="python-desde-2009">
+<h1>Python (Desde 2009)<a class="headerlink" href="#python-desde-2009" title="Enlazar permanentemente con este título">¶</a></h1>
+<table border="0" id="front-page" align="center">
+<td width="74%"><p>Mientras concluía mi maestría en el 2008, sentí la necesidad de contar con un
+lenguaje sencillo y versátil, con el que pudiera analizar rápidamente los
+resultados de las simulaciones que estaba realizando.</p>
+<p>Debido al contacto con el movimiento <em>open source</em> que tuve durante mi tesis,
+sabía que este lenguaje
+no podía ser <a class="reference internal" href="Mathematica.html"><em>Mathematica</em></a>. La razón principal es que su
+licencia es demasiado costosa para que pueda ser utilizado con facilidad por
+estudiantes y profesores de universidades públicas en nuestro país. Además, la
+comunidad que lo utiliza es pequeña y localizada, lo que dificulta el obtener
+ayuda para resolver distintos tipos de problemas.</p>
+<p>No me tomó mucho tiempo darme cuenta que el lenguaje que mejor se adaptaba a
+mis requerimientos es
+<a class="reference external" href="http://www.python.org/">Python</a>. <em>Python</em> cuenta con un conjunto de librerías científicas estables
+y bien desarrolladas (como <a class="reference external" href="http://numpy.scipy.org/">Numpy</a> y <a class="reference external" href="http://www.scipy.org/">SciPy</a>), con una interfaz eficiente y
+hecha a medida para el trabajo científico (<a class="reference external" href="http://ipython.org/">IPython</a>), y con una comunidad
+numerosa y amigable.</p>
+<p>Otra de las grandes ventajas de <em>Python</em> &#8211;además de ser muy fácil de
+aprender&#8211; es que <em>no</em> está hecho por o para científicos, pues es un lenguaje
+de <a class="reference external" href="http://en.wikipedia.org/wiki/General-purpose_programming_language">propósito general</a>. Esto significa que ha sido diseñado para realizar
+cualquier tipo de tarea, lo cual lo hace
+más potente y flexible que un lenguaje especializado (que son en los que se
+basan <em>Mathematica</em> o <em>Matlab</em>). Gracias a ello, ha sido
+utilizado para crear gran cantidad de programas y librerías, casi podría
+decirse que una para todo propósito imaginable! <a class="footnote-reference" href="#id2" id="id1">[1]</a>.</p>
+<p>Debido a que <em>Mathematica</em> está basado en el paradigma de <a class="reference external" href="http://en.wikipedia.org/wiki/Functional_programming">programación
+funcional</a>, a mediados del 2009 decidí crear un paquete llamado <a class="reference internal" href="funckit.html"><em>funckit</em></a>, que lo soportara de mejor manera en <em>Python</em> y que me permitiera a
+mí, y quizá a otros en mi situación, hacer una transición más sencilla hacia
+él.</p>
+<p>Más adelante, durante la pŕimera mitad del 2010 estuve buscando
+desesperadamente un ambiente integrado con el que me sintiera a gusto a la
+hora de desarrollar programas científicos basados en <em>Python</em>. Después de probar
+muchas alternativas, finalmente me decidí por <a class="reference internal" href="Spyder.html"><em>Spyder</em></a>, proyecto
+con el que además he estado colaborando desde entonces, añadiéndole varias
+características adicionales.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Como puede verse en <a class="reference external" href="http://pypi.python.org/pypi">PyPI</a>, el mayor
+repositorio de software libre del lenguaje.</td></tr>
+</tbody>
+</table>
+<td width="40%">
+<img id="python-logo" src="../_static/python.png">
+</td>
+</table></div>
+
+
+      </div>
+      <div class="bottomnav"></div>
+   </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Carlos Córdoba.
+      Actualizado por última vez en Jan 05, 2015.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

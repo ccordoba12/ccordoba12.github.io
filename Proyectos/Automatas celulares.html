@@ -1,0 +1,111 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Simulación de autómatas celulares con vecindad de Margolus (2000 - 2002) &mdash; Carlos A. Córdoba</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="Carlos A. Córdoba" href="../index.html" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kreon:300,400' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:regular,bold' rel='stylesheet' type='text/css'/>
+
+  </head>
+  <body>
+    <script>
+     // Add the selected class to the currently active element of the
+     // topnav
+     function setSelected() {
+         $("div.topnav a").removeClass("selected");
+         $("div.topnav a").each( function(i) {
+             if (document.location.href.indexOf($(this).text()) > 0) {
+                 $(this).addClass("selected")
+             };
+         });
+     };
+     
+     // Apply the previous functions after the page has loaded
+     $(document).ready( function () { 
+         setSelected();
+     });
+   </script>
+
+    <div id='center-highlight'>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>Carlos A. Córdoba</span></a></h1>
+        <h2 class="heading"><span>Físico computacional</span></h2>
+      </div>
+      <div class="topnav">
+      <ul class="tabs" role="navigation">
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="Principal.html">Proyectos</a></li>
+    <li><a href="../Publicaciones.html">Publicaciones</a></li>
+    <li><a href="../Ensayos.html">Ensayos</a></li>
+    <li><a href="../Novedades.html">Novedades</a></li>
+    <li><a href="../Contacto.html">Contacto</a></li>
+<ul>
+      </div>
+      <div class="content">
+        
+  <div class="section" id="simulacion-de-automatas-celulares-con-vecindad-de-margolus-2000-2002">
+<h1>Simulación de autómatas celulares con vecindad de Margolus (2000 - 2002)<a class="headerlink" href="#simulacion-de-automatas-celulares-con-vecindad-de-margolus-2000-2002" title="Enlazar permanentemente con este título">¶</a></h1>
+<table border="0" id="front-page" align="center">
+<td width="80%"><p>La parte más interesante y extensa de mi tesis de pregrado fue la creación de
+un notebook en el que explicaba paso a paso cómo simular el flujo de arena por
+un embudo, por medio de un autómata celular con vecindad de Margolus.</p>
+<img alt="../_images/embudo.png" class="align-center" src="../_images/embudo.png" />
+<p>Haciendo uso de las increíbles capacidades de manipulación simbólica que ofrece
+<em>Mathematica</em>, durante mi trabajo también ideé una forma en la que se podían definir
+gráficamente las reglas de evolución del autómata y creé una paleta para
+poder introducirlas fácilmente a cualquier otro notebook.</p>
+<img alt="../_images/regla_grafica.png" class="align-center" src="../_images/regla_grafica.png" />
+<p>Mi intención era que los futuros usuarios del notebook pudieran definir sus
+propias reglas, sin tener que preocuparse por como programarlas, y que sólo
+tuvieran que crear una rutina de visualización para observar los resultados de
+sus autómatas. Como ejemplo, yo mismo definí las reglas del <a class="reference external" href="http://en.wikipedia.org/wiki/Lattice_gas_automaton">gas HPP</a> y mostré
+como éste puede reproducir cualitativamente el comportamiento de una onda de
+presión en un gas de partículas.</p>
+<img alt="../_images/hpp_gas.png" class="align-center" src="../_images/hpp_gas.png" />
+<p>Los interesados pueden <a class="reference download internal" href="../_downloads/Automatas celulares con vecindad de Margolus.zip"><tt class="xref download docutils literal"><span class="pre">descargar</span></tt></a> el notebook y la paleta que lo acompaña
+(actualizados para Mathematica 8), y pueden encontrar más reglas de evolución
+para otros fenómenos físicos en la <a class="reference external" href="http://people.csail.mit.edu/nhm/thesis.pdf">tesis</a> de Norm Margolus.</p>
+<td width="30%">
+<a href=../Proyectos/Mathematica.html>
+<img src="../_static/mathematica-4.png">
+</a>
+</td>
+</table></div>
+
+
+      </div>
+      <div class="bottomnav"></div>
+   </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Carlos Córdoba.
+      Actualizado por última vez en Jan 05, 2015.
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
